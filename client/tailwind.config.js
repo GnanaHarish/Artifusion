@@ -21,6 +21,7 @@ module.exports = withMT({
         'lime-green' : '#00FF00',
         'coral' : '#FF7F50'
       },
+      hover: ['responsive'],
     },
   },
   plugins: [],

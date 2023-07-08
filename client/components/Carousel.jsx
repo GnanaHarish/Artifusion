@@ -3,7 +3,7 @@ import {ChevronLeft, ChevronRight} from 'react-feather'
 
 const Carousel = ({children : slides}) => {
     const [curr, setCurr] = useState(4);
-    const prev = () => (curr === 4 ? slides.length-1 : curr-1)
+    const prev = () => setCurr((curr) => (curr === 4 ? slides.length-1 : curr-1))
     return (
         <div className="overflow-hidden relative">
             <div className="flex">{slides}</div>

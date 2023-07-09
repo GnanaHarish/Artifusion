@@ -17,7 +17,7 @@ const Posts = () => {
     const fetchPosts = async () => {
       try {
         setLoading(true);
-        const response = await axios.get("https://melodious-axolotl-23a1f7.netlify.app/api/posts");
+        const response = await axios.get("https://artifusion.onrender.com/api/posts");
         setPosts(response.data);
         console.log(response.data);
       } catch (error) {

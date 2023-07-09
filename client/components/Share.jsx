@@ -15,7 +15,7 @@ const Share = ({ phrase, url, name, pubId }) => {
       console.log(url);
       setLoading(true);
       await axios
-        .post("http://localhost:3000/share", {
+        .post("https://artifusion.onrender.com/share", {
           phrase: phrase,
           url: url,
           name : name,

@@ -31,7 +31,7 @@ const Create = () => {
     try {
       event.preventDefault();
       setLoading(true);
-      const imageData = await axios.post("http://localhost:3000/create", {
+      const imageData = await axios.post("https://artifusion.onrender.com/create", {
         typedPhrase,
       });
       console.log(imageData);
